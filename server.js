@@ -1,16 +1,15 @@
 const mysql = require('mysql2')
 const inquirer = require('inquirer');
-const cTable = require(console.table);
+const cTable = require('console.table');
 
 // ! connect DB
 const connection = mysql.createConnection(
     {
         host: 'localhost',
         user: 'root',
-        password: '',
+        password: 'lederman69',
         database: 'empoylee_db'
-    },
-);
+    });
 
 connection.connect((err) => {
     if (err) throw err;
